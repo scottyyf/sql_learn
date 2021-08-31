@@ -1,0 +1,19 @@
+## 事务类型
+* DDL: 数据定义语言， CRUD操作
+* DML: 数据manufact?
+* DQL： 查询
+* DCL： 控制
+
+1. 库操作
+```
+show databases;
+show CREATE DATABASE data_base_name;
+use AML;
+show tables;
+
+create DATABASE data_base_name;
+alter DATABASE data_base_name charact set gbk;
+
+drop databse data_base_name;
+```
+
