@@ -16,3 +16,14 @@ begin
   end while;
 end
 ```
+
+```sql
+CREATE DEFINER=`root`@`%` PROCEDURE `p1`()
+BEGIN
+	DECLARE i int DEFAULT 1;
+	WHILE i<10 DO
+	DELETE FROM sky_roles WHERE `name`=cast(i as char); # 变量类型转化
+	set i=i+1;
+	END WHILE;
+END
+```
